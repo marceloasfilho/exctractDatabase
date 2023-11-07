@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:~/test;DB_CLOSE_ON_EXIT=FALSE;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+  test:
+    database:
+      replace: none
+
+  jpa:
+    defer-datasource-initialization: true
+    open-in-view: true
+
+  sql:
+    init:
+      mode: always
